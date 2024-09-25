@@ -50,10 +50,10 @@
 				<div class="collapse navbar-collapse " id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#">패키지</a>
+							<a class="nav-link" href="#package">패키지</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">FAQ</a>
+							<a class="nav-link" href="#faq">FAQ</a>
 						</li>
 					</ul>
 				</div>
@@ -111,7 +111,7 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-						<form>
+						<form id="submitform">
 							<!-- 이메일 -->
 							<div class="form-floating mb-3">
 								<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -130,7 +130,9 @@
 						</form>
 					</div>
 					<div class="modal-footer d-flex justify-content-center">
-						<button type="button" class="btn btn-primary">투어예약</button>
+						<button type="submit" form="submitform"  class="btn btn-primary">투어예약</button>
+						<!--버튼이 폼태그 바깥에 있을 경우 연동시켜주려면 폼에 아이디 주고 연동할 버튼 submit 타입으로 하고
+						버튼 안 form="연동할 폼아이디" 하면 된다. -->
 						</div>
 					</div>
 				</div>
